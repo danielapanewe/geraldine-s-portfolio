@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="dist/main.css" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!-- MENU NAVIGATION -->
+        <nav class="mx-auto px-8 py-4 fixed top-0 left-0 w-full z-[100]">
+            <div class="flex items-center justify-between">
+                <a href="#" class="pt-1 font-bold text-3xl sm:text-4xl logo">
+                    GEGE
+                </a>
+
+                <ul class="hidden md:flex space-x-6">
+                    <li>
+                        <a href="#" class="hover:text-firstcolor font-semibold"
+                            >Accueil</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-firstcolor font-semibold"
+                            >A propos</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-firstcolor font-semibold"
+                            >Expériences</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-firstcolor font-semibold"
+                            >Skills</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-firstcolor font-semibold"
+                            >Projets</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-firstcolor font-semibold"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <!-- HERO SECTION -->
+            <section
+                class="hero flex flex-col items-center justify-center container h-[100vh] bg-[url('/images/back1.svg')] bg-cover bg-no-repeat relative pt-2 sm:pt-0"
+            >
+                <svg
+                    width="300"
+                    height="300"
+                    viewBox="0 0 1000 1000"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <defs>
+                        <clipPath id="shape">
+                            <path
+                                fill="currentColor"
+                                d="M744.5,707.5Q635,915,373,849Q111,783,113.5,502Q116,221,364,188.5Q612,156,733,328Q854,500,744.5,707.5Z"
+                            ></path>
+                        </clipPath>
+                    </defs>
+
+                    <g clip-path="url(#shape)">
+                        <path
+                            fill="#444cf7"
+                            d="M744.5,707.5Q635,915,373,849Q111,783,113.5,502Q116,221,364,188.5Q612,156,733,328Q854,500,744.5,707.5Z"
+                        />
+                        <image
+                            class="home__blobimg"
+                            href="images/img21.jpg"
+                            y="110"
+                            x="115"
+                        />
+                    </g>
+                </svg>
+
+                <div class="hero__text flex flex-col text-center gap-5">
+                    <h1 class="text-titlecolor text-2xl font-bold sm:text-4xl">
+                        Hello, je suis Elono Geraldine
+                    </h1>
+                    <p class="text-textcolor font-normal text-left">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti quae quia eligendi placeat aliquid itaque
+                        ratione numquam optio perspiciatis obcaecati ducimus,
+                        modi, fugit impedit doloremque! Ea est deleniti magnam
+                        fuga. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Esse, quia? Beatae molestiae dolorem ratione
+                        cupiditate aliquam blanditiis, nisi soluta accusamus,
+                        natus mollitia velit, ut similique fugiat? Obcaecati
+                        quia sapiente earum!
+                    </p>
+                    <a
+                        href="#"
+                        class="text-textcolor self-center underline-offset-8 pb-1 after:w-24 after:h-0.5 after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:bg-firstcolor after:block after:absolute block relative hover:scale-125 hover:after:duration-300 hover:text-firstcolor ease-in-out"
+                        >Me contacter</a
+                    >
+                </div>
+
+                <div
+                    class="social__icon absolute flex flex-col sm:top-[50%] translate-y-[-50%] right-0 pr-8 pb-5 text-2xl text-textcolor gap-2 top-[28%]"
+                >
+                    <span
+                        class="sm:w-0.5 sm:h-20 sm:bg-textcolor sm:self-center sm:block hidden"
+                    ></span>
+                    <ion-icon
+                        name="logo-behance"
+                        class="hover:text-firstcolor"
+                    ></ion-icon>
+                    <ion-icon
+                        name="logo-linkedin"
+                        class="hover:text-firstcolor"
+                    ></ion-icon>
+                    <ion-icon
+                        name="logo-facebook"
+                        class="hover:text-firstcolor"
+                    ></ion-icon>
+                    <ion-icon
+                        name="logo-twitter"
+                        class="hover:text-firstcolor"
+                    ></ion-icon>
+                    <span
+                        class="sm:w-0.5 sm:h-20 sm:bg-textcolor sm:self-center sm:block hidden"
+                    ></span>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section
+                class="about grid lg:grid-cols-[1fr_0.6fr] grid-cols-1 container mt-5 relative"
+            >
+                <img
+                    src="images/aboutimg.jpg"
+                    alt="ma photo"
+                    class="rounded w-full lg:w-auto"
+                />
+                <div
+                    class="about__text border-2 border-t-0 lg:border-t-2 rounded-md p-3 lg:my-[4rem] backdrop-blur-lg bg-white/30 lg:absolute lg:w-[55%] lg:h-[55%] lg:right-0 lg:top-[40%] lg:translate-y-[-50%] lg:mr-8 overflow-hidden flex flex-col justify-center gap-2"
+                >
+                    <h2 class="text-2xl sm:text-3xl text-titlecolor">
+                        Je suis ELONO Geraldine
+                    </h2>
+                    <p class="text-textcolor">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Provident facilis dolores ab atque, illum fugit ducimus
+                        optio! Veniam dolores vel repellat harum magnam.
+                        Corporis iusto, alias ex officia cupiditate voluptates.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus ab molestiae consequatur quia quo
+                        repudiandae at maiores mollitia dignissimos rem nisi, ea
+                        pariatur perspiciatis rerum tempora fuga placeat. In,
+                        accusamus?
+
+                        <a href="#" class="text-firstcolor_second underline"
+                            >En savoir plus</a
+                        >
+                    </p>
+
+                    <div class="flex text-2xl text-firstcolor_second gap-2">
+                        <ion-icon
+                            name="logo-behance"
+                            class="hover:text-firstcolor"
+                        ></ion-icon>
+                        <ion-icon
+                            name="logo-linkedin"
+                            class="hover:text-firstcolor"
+                        ></ion-icon>
+                        <ion-icon
+                            name="logo-facebook"
+                            class="hover:text-firstcolor"
+                        ></ion-icon>
+                        <ion-icon
+                            name="logo-twitter"
+                            class="hover:text-firstcolor"
+                        ></ion-icon>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE SECTION -->
+            <section class="experience bg-[#396eb415]">
+                <div class="experience__container container py-4">
+                    <h2
+                        class="title text-titlecolor text-3xl text-center font-bold"
+                    >
+                        Expériences
+                    </h2>
+                    <div
+                        class="experience__content grid grid-cols-1 md:grid-cols-2 pt-4 gap-5"
+                    >
+                        <div
+                            class="experience__left relative flex flex-col gap-5 after:absolute after:h-[100%] after:w-[0.1rem] after:left-0 after:top-0 after:bg-firstcolor"
+                        >
+                            <div
+                                class="experience__item border-2 backdrop-blur-sm bg-white/30 rounded-md pb-3 ml-6 after:absolute after:w-[1.5rem] after:h-[0.1rem] after:bg-firstcolor after:left-[-2.5%] after:translate-x-[-50%] after:top-[20%]"
+                            >
+                                <p
+                                    class="experience__year border-b-2 p-2 font-bold text-titlecolor "
+                                >
+                                    2022 - A présent
+                                </p>
+                                <h3
+                                    class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0"
+                                >
+                                    AWESOME STUDIO
+                                </h3>
+                                <p
+                                    class="experience__post text-titlecolor font-light pl-2"
+                                >
+                                    Lead Designer
+                                </p>
+                                <p
+                                    class="experience__description text-textcolor font-normal pl-5 pt-2"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Molestias, repellendus
+                                    nobis. Assumenda nam distinctio provident
+                                    obcaecati harum laudantium quae non amet
+                                    officiis cupiditate ex modi, consequuntur a
+                                    unde, dolorum facere.Assumenda nam
+                                    distinctio provident obcaecati harum
+                                    laudantium quae non amet officiis cupiditate
+                                    ex modi, consequuntur a unde, dolorum
+                                    facere.
+                                </p>
+                            </div>
+                            <div
+                                class="experience__item border-2 backdrop-blur-sm bg-white/30 rounded-md pb-3 ml-6"
+                            >
+                                <p
+                                    class="experience__year border-b-2 p-2 font-bold text-titlecolor"
+                                >
+                                    2022 - A présent
+                                </p>
+                                <h3
+                                    class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0"
+                                >
+                                    AWESOME STUDIO
+                                </h3>
+                                <p
+                                    class="experience__post text-titlecolor font-light pl-2"
+                                >
+                                    Lead Designer
+                                </p>
+                                <p
+                                    class="experience__description text-textcolor font-normal pl-5 pt-2"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Molestias, repellendus
+                                    nobis. Assumenda nam distinctio provident
+                                    obcaecati harum laudantium quae non amet
+                                    officiis cupiditate ex modi, consequuntur a
+                                    unde, dolorum facere.Assumenda nam
+                                    distinctio provident obcaecati harum
+                                    laudantium quae non amet officiis cupiditate
+                                    ex modi, consequuntur a unde, dolorum
+                                    facere.
+                                </p>
+                            </div>
+                            <div
+                                class="experience__item border-2 backdrop-blur-sm bg-white/30 rounded-md pb-3 ml-6"
+                            >
+                                <p
+                                    class="experience__year border-b-2 p-2 font-bold text-titlecolor"
+                                >
+                                    2022 - A présent
+                                </p>
+                                <h3
+                                    class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0"
+                                >
+                                    AWESOME STUDIO
+                                </h3>
+                                <p
+                                    class="experience__post text-titlecolor font-light pl-2"
+                                >
+                                    Lead Designer
+                                </p>
+                                <p
+                                    class="experience__description text-textcolor font-normal pl-5 pt-2"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Molestias, repellendus
+                                    nobis. Assumenda nam distinctio provident
+                                    obcaecati harum laudantium quae non amet
+                                    officiis cupiditate ex modi, consequuntur a
+                                    unde, dolorum facere.Assumenda nam
+                                    distinctio provident obcaecati harum
+                                    laudantium quae non amet officiis cupiditate
+                                    ex modi, consequuntur a unde, dolorum
+                                    facere.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="experience__left relative flex flex-col gap-5 after:absolute after:h-[100%] after:w-[0.1rem] after:left-0 after:top-0 after:bg-firstcolor"
+                        >
+                            <div
+                                class="experience__item border-2 backdrop-blur-lg bg-white/30 rounded-md pb-3 ml-6"
+                            >
+                                <p
+                                    class="experience__year border-b-2 p-2 font-bold text-titlecolor"
+                                >
+                                    2023 - A présent
+                                </p>
+                                <h3
+                                    class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0"
+                                >
+                                    AWESOME STUDIO
+                                </h3>
+                                <p
+                                    class="experience__post text-titlecolor font-light pl-2"
+                                >
+                                    Lead Designer
+                                </p>
+                                <p
+                                    class="experience__description text-textcolor font-normal pl-5 pt-2"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Molestias, repellendus
+                                    nobis. Assumenda nam distinctio provident
+                                    obcaecati harum laudantium quae non amet
+                                    officiis cupiditate ex modi, consequuntur a
+                                    unde, dolorum facere.Assumenda nam
+                                    distinctio provident obcaecati harum
+                                    laudantium quae non amet officiis cupiditate
+                                    ex modi, consequuntur a unde, dolorum
+                                    facere.
+                                </p>
+                            </div>
+                            <div
+                                class="experience__item border-2 backdrop-blur-sm bg-white/30 rounded-md pb-3 ml-6"
+                            >
+                                <p
+                                    class="experience__year border-b-2 p-2 font-bold text-titlecolor"
+                                >
+                                    2022 - A présent
+                                </p>
+                                <h3
+                                    class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0"
+                                >
+                                    AWESOME STUDIO
+                                </h3>
+                                <p
+                                    class="experience__post text-titlecolor font-light pl-2"
+                                >
+                                    Lead Designer
+                                </p>
+                                <p
+                                    class="experience__description text-textcolor font-normal pl-5 pt-2"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Molestias, repellendus
+                                    nobis. Assumenda nam distinctio provident
+                                    obcaecati harum laudantium quae non amet
+                                    officiis cupiditate ex modi, consequuntur a
+                                    unde, dolorum facere.Assumenda nam
+                                    distinctio provident obcaecati harum
+                                    laudantium quae non amet officiis cupiditate
+                                    ex modi, consequuntur a unde, dolorum
+                                    facere.
+                                </p>
+                            </div>
+                            <div
+                                class="experience__item border-2 backdrop-blur-sm bg-white/30 rounded-md pb-3 ml-6"
+                            >
+                                <p
+                                    class="experience__year border-b-2 p-2 font-bold text-titlecolor"
+                                >
+                                    2022 - A présent
+                                </p>
+                                <h3
+                                    class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0"
+                                >
+                                    AWESOME STUDIO
+                                </h3>
+                                <p
+                                    class="experience__post text-titlecolor font-light pl-2"
+                                >
+                                    Lead Designer
+                                </p>
+                                <p
+                                    class="experience__description text-textcolor font-normal pl-5 pt-2"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Molestias, repellendus
+                                    nobis. Assumenda nam distinctio provident
+                                    obcaecati harum laudantium quae non amet
+                                    officiis cupiditate ex modi, consequuntur a
+                                    unde, dolorum facere.Assumenda nam
+                                    distinctio provident obcaecati harum
+                                    laudantium quae non amet officiis cupiditate
+                                    ex modi, consequuntur a unde, dolorum
+                                    facere.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILL SECTION -->
+            <section class="skill container mt-5">
+                <div
+                    class="sill__container flex gap-5 flex-wrap items-center justify-center pt-20"
+                >
+                    <img
+                        src="images/angular.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img
+                        src="images/gulp.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img
+                        src="images/bootstrap.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img src="images/css.png" class="w-[5%] grayscale" alt="" />
+                    <img
+                        src="images/sass.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img
+                        src="images/gulp.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img
+                        src="images/bootstrap.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img src="images/css.png" class="w-[5%] grayscale" alt="" />
+                    <img
+                        src="images/sass.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img
+                        src="images/angular.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img
+                        src="images/gulp.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img
+                        src="images/bootstrap.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img src="images/css.png" class="w-[5%] grayscale" alt="" />
+                    <img
+                        src="images/sass.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img
+                        src="images/gulp.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img
+                        src="images/gulp.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img
+                        src="images/bootstrap.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img src="images/css.png" class="w-[5%] grayscale" alt="" />
+                    <img
+                        src="images/sass.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                    <img
+                        src="images/angular.png"
+                        class="w-[5%] grayscale"
+                        alt=""
+                    />
+                </div>
+            </section>
+
+            <!-- PROJECT SECTION-->
+            <section class="project container mt-10 text-center">
+                <div class="project__container">
+                    <input
+                        type="radio"
+                        name="radioBtn"
+                        id="allproject"
+                        class="hidden"
+                        checked
+                    />
+                    <input
+                        type="radio"
+                        name="radioBtn"
+                        id="photographie"
+                        class="hidden"
+                    />
+                    <input
+                        type="radio"
+                        name="radioBtn"
+                        id="audiovisuel"
+                        class="hidden"
+                    />
+                    <input
+                        type="radio"
+                        name="radioBtn"
+                        id="journalisme"
+                        class="hidden"
+                    />
+
+                    <label
+                        for="allproject"
+                        class="project__tag project__tag--allproject border-2 p-2 bg-[#efefef] rounded-full cursor-pointer"
+                        >Tout</label
+                    >
+                    <label
+                        for="photographie"
+                        class="project__tag project__tag--photographie border-2 p-2 bg-[#efefef] rounded-full cursor-pointer"
+                        >Photographie</label
+                    >
+                    <label
+                        for="audiovisuel"
+                        class="project__tag project__tag--audiovisuel border-2 p-2 bg-[#efefef] rounded-full mr-1 cursor-pointer"
+                        >Audiovisuel</label
+                    ><label
+                        for="journalisme"
+                        class="project__tag project__tag--journalisme border-2 p-2 bg-[#efefef] rounded-full cursor-pointer"
+                        >Journalisme</label
+                    >
+
+                    <div
+                        class="project__images grid grid-cols-3 gap-5 items-center justify-center mt-10"
+                    >
+                        <img
+                            src="images/gall1.jpg"
+                            class="photographie w-[100%]"
+                            alt=""
+                        />
+                        <img
+                            src="images/gall2.jpg"
+                            class="photographie w-[100%]"
+                            alt=""
+                        />
+                        <img
+                            src="images/gall13.jpg"
+                            class="photographie w-[100%]"
+                            alt=""
+                        />
+                        <img
+                            src="images/gall5.jpg"
+                            class="audiovisuel w-[100%]"
+                            alt=""
+                        />
+                        <img
+                            src="images/gall6.jpg"
+                            class="audiovisuel w-[100%]"
+                            alt=""
+                        />
+                        <img
+                            src="images/gall7.jpg"
+                            class="audiovisuel w-[100%]"
+                            alt=""
+                        />
+                        <img
+                            src="images/gall11.jpg"
+                            class="journalisme w-[100%]"
+                            alt=""
+                        />
+                        <img
+                            src="images/gall12.jpg"
+                            class="journalisme w-[100%]"
+                            alt=""
+                        />
+                        <img
+                            src="images/gall13.jpg"
+                            class="journalisme w-[100%]"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>
