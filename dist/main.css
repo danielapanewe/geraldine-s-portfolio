@@ -583,7 +583,7 @@ body {
                 rgba(255, 255, 255, 0.9),
                 rgba(255, 255, 255, 0.9)
             ),
-            url('/images/back12.webp');
+            url('../images/back12.webp');
 }
 
 .hero__sociallink ion-icon{
@@ -596,7 +596,7 @@ body {
   font-size: 3rem;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: url('/images/afri4.webp');
+  background-image: url('../images/afri4.webp');
   color: transparent;
   text-align: center;
   text-transform: uppercase;
@@ -607,7 +607,7 @@ body {
 
 .title::after {
   content: '';
-  background: url(/images/line.png);
+  background: url(../images/line.png);
   background-size: cover;
   bottom: 5%;
   left: 50%;
@@ -651,8 +651,8 @@ body {
 
 .tab--active {
   border-bottom: 3px solid transparent;
-  -o-border-image: url(/images/afri4.webp) 30 round;
-     border-image: url(/images/afri4.webp) 30 round;
+  -o-border-image: url(../images/afri4.webp) 30 round;
+     border-image: url(../images/afri4.webp) 30 round;
   padding: 0.1rem;
   border-radius: 50%;
 }
