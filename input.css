@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Concert One', cursive;
+    }
+    .hero__text {
+        
+        text-align: center;
+
+    }
+    .hero__title{
+        font-size: 3rem;
+        font-family: 'Caesar Dressing', cursive;
+      
+        font-family: 'Hanalei', cursive;
+        font-family: 'Hanalei Fill', cursive;
+        font-family: 'Stick', sans-serif;
+    }
+    .hero__paragraph{
+        font-size: 2rem;
+    }
     .logo {
         color: transparent;
         -webkit-text-stroke: 1.75px rgb(57, 111, 180);
@@ -12,32 +32,113 @@
         margin: 0 auto;
     }
 
-    /* for the filter in the project section*/
-    #photographie:checked ~ .project__images > img:not([class*='photographie']),
-    #audiovisuel:checked ~ .project__images > img:not([class*='audiovisuel']),
-    #journalisme:checked ~ .project__images > img:not([class*='journalisme']) {
-        width: 0;
-        height: 0;
+    .skill__item img {
+        box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.4);
+        border-radius: 5%;
+    }
+    .hero {
+        background: linear-gradient(
+                rgba(255, 255, 255, 0.9),
+                rgba(255, 255, 255, 0.9)
+            ),
+            url('/images/back12.webp');
+    }
+    .hero__sociallink ion-icon{
+        font-size: 1.5rem;
+        
+    }
+    /* for the title */
+    .title {
+        font-size: 3rem;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: url('/images/afri4.webp');
+        color: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        font-weight: 800;
+        -webkit-text-stroke: 0.1px #fff;
+    }
+    .title::after {
+        content: '';
+        background: url(/images/line.png);
+        background-size: cover;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15%;
+        height: 0.5rem;
+        position: absolute;
+    }
+    /* for the button */
+
+    .button {
+        padding: 12px 18px;
+        display: inline-block;
+    }
+    .button:hover .arrow {
+        transform: translateX(5px);
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    .button::before {
+        content: '';
+        position: absolute;
+        background-color: rgba(57, 111, 180, 0.5);
+        top: 10px;
+        left: 0;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        z-index: -1;
+        transition: all 0.3s ease;
+    }
+    .button:hover::before {
+        width: 100%;
+        background-color: rgba(57, 111, 180, 0.5);
     }
 
-    #allproject:checked ~ .project__tag--allproject,
-    #photographie:checked ~ .project__tag--photographie,
-    #audiovisuel:checked ~ .project__tag--audiovisuel,
-    #journalisme:checked ~ .project__tag--journalisme {
-        background-color: rgb(57, 111, 180);
-        color: hsl(230, 8%, 15%);
+    .tab--active {
+        border-bottom: 3px solid transparent;
+        border-image: url(/images/afri4.webp) 30 round;
+        padding: 0.1rem;
+        border-radius: 50%;
     }
-    .project__images img {
-        transition: all 0.4s ease-in-out;
-        width: 400px;
+    .project__content {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease-out;
+    }
+    .project__content img {
+        width: 0;
         height: 300px;
         object-fit: cover;
-        border-radius: 1rem;
+        border-radius: 2rem;
+        transition: all 0.4s ease-out;
     }
-
+    .project__content--active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .project__content--active img {
+        width: 100%;
+    }
+    .contact__item ion-icon {
+        font-size: 1.5rem;
+        color: hsl(230, 8%, 15%);
+    }
     @media (max-width: 950px) {
         .container {
             padding: 0 50px;
+        }
+    }
+    @media (min-width: 768px) {
+        .contact__item ion-icon {
+            font-size: 2.5rem;
         }
     }
     @media (max-width: 500px) {
