@@ -16,7 +16,7 @@ module.exports = {
                 firstcolor_third: 'rgb(106,212,255)',
                 firstcolor_second: 'rgb(53,106,133)',
                 'firstcolor': 'rgb(57,111,180)',
-                'textcolor': 'hsl(230,8%,45%)',
+                'textcolor': 'hsl(230,8%,15%)',
                 'titlecolor': 'hsl(230,8%,15%)',
             },
         },

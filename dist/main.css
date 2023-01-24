@@ -542,11 +542,10 @@ video {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
-  font-family: 'Concert One', cursive;
+  font-family: 'Lato', sans-serif;
   background: linear-gradient(
-                rgba(255, 255, 255, 0.9),
-                rgba(255, 255, 255, 0.9)
+                rgba(255, 255, 255, 0.95),
+                rgba(255, 255, 255, 0.95)
             ),
             url('../images/backimage.png');
 }
@@ -554,7 +553,7 @@ body {
 .menu {
   display: block;
   box-sizing: border-box;
-  /* background: white; */
+  /* background-color: white; */
   height: 87.75px;
   width: 87.75px;
   padding: 36px;
@@ -628,10 +627,10 @@ body {
 }
 
 .menu span a:hover {
-  color: #1D90F5;
+  color: rgba(57, 111, 180, 0.5);
 }
 
-.container__menu{
+.container__menu {
   position: absolute;
   top: 22.5px;
   right: calc(100% - 73.125px);
@@ -651,9 +650,10 @@ body {
   cursor: pointer;
 }
 
-.toggle:after, .toggle:before {
-  content: "";
-  background: #1D90F5;
+.toggle:after,
+    .toggle:before {
+  content: '';
+  background: rgba(57, 111, 180, 0.5);
   width: 36px;
   height: 4.5px;
   margin: auto;
@@ -697,11 +697,6 @@ body {
 
 .hero__paragraph {
   font-size: 2rem;
-}
-
-.logo {
-  color: transparent;
-  -webkit-text-stroke: 1.75px rgb(57, 111, 180);
 }
 
 .container {
@@ -758,7 +753,8 @@ body {
 
 .button {
   padding: 12px 18px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .button:hover .arrow {
@@ -822,12 +818,28 @@ body {
 
 .contact__item ion-icon {
   font-size: 1.5rem;
-  color: hsl(230, 8%, 15%);
+  color: rgba(57, 111, 180, 0.5);
+}
+
+.paragraph {
+  font-size: 1rem;
+}
+
+.experience__year {
+  border-color: rgba(57, 111, 180, 0.5);
+}
+
+.experience__item::after {
+  background-color: rgba(57, 111, 180, 0.5);
 }
 
 @media (max-width: 950px) {
   .container {
     padding: 0 50px;
+  }
+
+  .paragraph {
+    font-size: 0.8rem;
   }
 }
 
@@ -1195,7 +1207,7 @@ body {
 
 .text-textcolor {
   --tw-text-opacity: 1;
-  color: hsl(230 8% 45% / var(--tw-text-opacity));
+  color: hsl(230 8% 15% / var(--tw-text-opacity));
 }
 
 .text-titlecolor {
@@ -1236,12 +1248,6 @@ body {
 .after\:w-\[0\.01rem\]::after {
   content: var(--tw-content);
   width: 0.01rem;
-}
-
-.after\:bg-textcolor::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: hsl(230 8% 45% / var(--tw-bg-opacity));
 }
 
 .hover\:text-firstcolor:hover {
@@ -1296,7 +1302,7 @@ body {
 
   .sm\:bg-textcolor {
     --tw-bg-opacity: 1;
-    background-color: hsl(230 8% 45% / var(--tw-bg-opacity));
+    background-color: hsl(230 8% 15% / var(--tw-bg-opacity));
   }
 
   .sm\:p-\[0\.5rem\] {
