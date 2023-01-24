@@ -1,3 +1,22 @@
+//POUR LE MENU
+let toggle = document.querySelector('.toggle');
+let menu = document.querySelector('.menu');
+console.log(menu);
+let menuLink = document.querySelectorAll('.menu span');
+let containerMenu = document.querySelector('.container__menu');
+console.log(menuLink);
+toggle.addEventListener('click', function(){
+    menu.classList.toggle('open');
+    menuLink.forEach(item =>{
+        item.classList.toggle('link--hide');
+    });
+    toggle.classList.toggle('close');
+    containerMenu.classList.toggle('close');
+});
+
+
+
+// pOUR LE FILTRE SUR LA SECTION PROJET
 const tabs = [...document.querySelectorAll('.tab')];
 const tabsContent = [...document.querySelectorAll('.project__content')];
 

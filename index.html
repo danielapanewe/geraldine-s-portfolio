@@ -15,79 +15,87 @@
     </head>
     <body>
         <!-- MENU NAVIGATION -->
-        <nav class="mx-auto px-8 py-4 fixed top-0 left-0 w-full z-[100] hidden">
-            <div class="flex items-center justify-between">
-                <a href="#" class="pt-1 font-bold text-3xl sm:text-4xl logo">
-                    GEGE
-                </a>
-
-                <ul class="hidden md:flex space-x-6">
-                    <li>
-                        <a href="#" class="hover:text-firstcolor font-semibold"
-                            >Accueil</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-firstcolor font-semibold"
-                            >A propos</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-firstcolor font-semibold"
-                            >Expériences</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-firstcolor font-semibold"
-                            >Skills</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-firstcolor font-semibold"
-                            >Projets</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-firstcolor font-semibold"
-                            >Contact</a
-                        >
-                    </li>
-                </ul>
+        <!-- <nav
+            class="hidden menu mx-auto px-8 py-4 fixed top-[5%] left-[5%] w-[20%] h-[10%] z-[100] shadow-black rounded overflow-hidden"
+        >
+            <div class="menu__container flex gap-2">
+                <span class="link-hide">
+                    <a href="#" class="hover:text-firstcolor font-semibold"
+                        >Accueil</a
+                    >
+                </span>
+                <span class="link-hide">
+                    <a href="#" class="hover:text-firstcolor font-semibold"
+                        >A propos</a
+                    >
+                </span>
+                <span class="link-hide">
+                    <a href="#" class="hover:text-firstcolor font-semibold"
+                        >Projets</a
+                    >
+                </span>
+                <span class="link-hide">
+                    <a href="#" class="hover:text-firstcolor font-semibold"
+                        >Contact</a
+                    >
+                </span>
+                <div class="toggle"></div>
             </div>
+        </nav> -->
+        <nav class="menu">
+            <div class="container__menu">
+                <div class="toggle"></div>
+            </div>
+            <span class="link--hide"><a href="#">Home </a></span
+            ><span class="link--hide"><a href="#">About </a></span
+            ><span class="link--hide"><a href="#">Info</a></span
+            ><span class="link--hide"><a href="#">Contact</a></span>
         </nav>
         <main>
             <!-- HERO SECTION -->
             <section
-                class="hero flex flex-col items-center justify-center container h-[100vh]  bg-cover bg-no-repeat relative pt-2 sm:pt-0"
+                class="hero flex flex-col items-center justify-center container h-[100vh] bg-cover bg-no-repeat relative pt-2 sm:pt-0"
             >
-            <img src="images/afri10.jpg" class="absolute w-[3%] h-[100%] top-0 left-0 object-cover" alt="">
-            <div class="hero__text">
-                <p class="hero__title">Hello, je suis Elono Géraldine</p>
-                <p class="hero__paragraph flex items-center justify-center">
-                    <span class="w-[10%] h-[0.2rem] bg-titlecolor inline-block"></span>
-                    <span>Je suis journaliste</span>
-                    <span class="w-[10%] h-[0.2rem] bg-titlecolor inline-block"></span>
-                </p>
-            </div>
-            <img src="images/afri10.jpg" class="absolute w-[3%] h-[100%] top-0 right-0 object-cover" alt="">
-            <div class="hero__sociallink mt-5 flex gap-2">
-                <ion-icon
-                name="logo-behance"
-                class="hover:text-firstcolor"
-            ></ion-icon>
-            <ion-icon
-                name="logo-linkedin"
-                class="hover:text-firstcolor"
-            ></ion-icon>
-            <ion-icon
-                name="logo-facebook"
-                class="hover:text-firstcolor"
-            ></ion-icon>
-            <ion-icon
-                name="logo-twitter"
-                class="hover:text-firstcolor"
-            ></ion-icon>
-            </div>
+                <img
+                    src="images/afri10.jpg"
+                    class="absolute w-[3%] h-[100%] top-0 left-0 object-cover"
+                    alt=""
+                />
+                <div class="hero__text">
+                    <p class="hero__title">Hello, je suis Elono Géraldine</p>
+                    <p class="hero__paragraph flex items-center justify-center">
+                        <span
+                            class="w-[6%] h-[0.2rem] bg-titlecolor inline-block"
+                        ></span>
+                        <span>Journaliste & Reporter d'images</span>
+                        <span
+                            class="w-[6%] h-[0.2rem] bg-titlecolor inline-block items-center"
+                        ></span>
+                    </p>
+                </div>
+                <img
+                    src="images/afri10.jpg"
+                    class="absolute w-[3%] h-[100%] top-0 right-0 object-cover"
+                    alt=""
+                />
+                <div class="hero__sociallink mt-5 flex gap-2">
+                    <ion-icon
+                        name="logo-behance"
+                        class="hover:text-firstcolor"
+                    ></ion-icon>
+                    <ion-icon
+                        name="logo-linkedin"
+                        class="hover:text-firstcolor"
+                    ></ion-icon>
+                    <ion-icon
+                        name="logo-facebook"
+                        class="hover:text-firstcolor"
+                    ></ion-icon>
+                    <ion-icon
+                        name="logo-twitter"
+                        class="hover:text-firstcolor"
+                    ></ion-icon>
+                </div>
                 <!-- <svg
                     width="300"
                     height="300"
@@ -153,11 +161,11 @@
                         <img
                             src="images/aboutimg.jpg"
                             alt="ma photo"
-                            class="rounded float-left w-[250px] h-[250px] object-cover mr-5"
+                            class="rounded w-[100%] md:float-left md:w-[250px] md:h-[250px] object-cover mr-5"
                         />
                         <div class="about__text">
                             <h2
-                                class="text-2xl sm:text-3xl text-titlecolor pb-3"
+                                class="text-2xl sm:text-3xl text-titlecolor pb-3 pt-2 md:pt-0"
                             >
                                 Je suis ELONO Geraldine
                             </h2>
@@ -233,7 +241,7 @@
                                     class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0 after:bg-textcolor"
                                 >
                                     <p
-                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute top-0 left-[8%] top-[5%] translate-x-[-50%]"
+                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
                                     >
                                         2022 - A présent
                                     </p>
@@ -267,7 +275,7 @@
                                     class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0 after:bg-textcolor"
                                 >
                                     <p
-                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute top-0 left-[8%] top-[5%] translate-x-[-50%]"
+                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
                                     >
                                         2022 - A présent
                                     </p>
@@ -301,7 +309,7 @@
                                     class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0 after:bg-textcolor"
                                 >
                                     <p
-                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute top-0 left-[8%] top-[5%] translate-x-[-50%]"
+                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
                                     >
                                         2022 - A présent
                                     </p>
@@ -339,7 +347,7 @@
                                     class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0 after:bg-textcolor"
                                 >
                                     <p
-                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute top-0 left-[8%] top-[5%] translate-x-[-50%]"
+                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
                                     >
                                         2022 - A présent
                                     </p>
@@ -373,7 +381,7 @@
                                     class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0 after:bg-textcolor"
                                 >
                                     <p
-                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute top-0 left-[8%] top-[5%] translate-x-[-50%]"
+                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
                                     >
                                         2022 - A présent
                                     </p>
@@ -407,7 +415,7 @@
                                     class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0 after:bg-textcolor"
                                 >
                                     <p
-                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute top-0 left-[8%] top-[5%] translate-x-[-50%]"
+                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
                                     >
                                         2022 - A présent
                                     </p>
@@ -502,7 +510,7 @@
                 <h2 class="title">Projets</h2>
                 <div class="project__container mt-5 grid">
                     <div
-                        class="project__navigation flex flex-col sm:flex-row justify-center gap-10 text-titlecolor font-semibold mb-4"
+                        class="project__navigation flex gap-2 text-[0.9rem] sm:text-normal sm:flex-row justify-center sm:gap-10 text-titlecolor font-semibold mb-4"
                         role="tablist"
                         aria-label="tabs component"
                     >
@@ -577,11 +585,15 @@
                 </div>
             </section>
 
-              <!-- CONTACT SECTION-->
+            <!-- CONTACT SECTION-->
             <section class="contact container mt-10 mb-4">
                 <h2 class="title">Me Contacter</h2>
-                <div class="contact__container flex flex-col items-start gap-5 mt-6 md:gap-0 md:flex-row md:justify-around md:items-center ">
-                    <div class="contact__item flex md:flex-col gap-1 items-center">
+                <div
+                    class="contact__container flex flex-col items-start gap-5 mt-6 md:gap-0 md:flex-row md:justify-around md:items-center"
+                >
+                    <div
+                        class="contact__item flex md:flex-col gap-1 items-center"
+                    >
                         <ion-icon
                             name="location-outline"
                             class="self-center"
@@ -589,17 +601,23 @@
                         <p class="text-textcolor text-sm font-bold">ADRESSE</p>
                         <p class="text-textcolor text-sm">Douala, Cameroun</p>
                     </div>
-                    <div class="contact__item flex md:flex-col gap-1 items-center">
+                    <div
+                        class="contact__item flex md:flex-col gap-1 items-center"
+                    >
                         <ion-icon
                             name="phone-portrait-outline"
                             class="self-center"
                         ></ion-icon>
-                        <p class="text-textcolor text-sm font-bold">TELEPHONE</p>
+                        <p class="text-textcolor text-sm font-bold">
+                            TELEPHONE
+                        </p>
                         <a href="#" class="text-textcolor text-sm"
                             >(+237)695 65 46 88</a
                         >
                     </div>
-                    <div class="contact__item flex md:flex-col gap-1 items-center">
+                    <div
+                        class="contact__item flex md:flex-col gap-1 items-center"
+                    >
                         <ion-icon
                             name="mail-outline"
                             class="self-center"
