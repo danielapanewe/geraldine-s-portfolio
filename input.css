@@ -259,9 +259,7 @@
         .container {
             padding: 0 50px;
         }
-        .paragraph {
-            font-size: 0.8rem;
-        }
+       
     }
     @media (min-width: 768px) {
         .contact__item ion-icon {
@@ -281,6 +279,9 @@
         }
         .title::after {
             width: 25%;
+        }
+        .paragraph {
+            font-size: 0.8rem;
         }
     }
 }
