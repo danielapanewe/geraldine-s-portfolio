@@ -554,8 +554,8 @@ body {
 
 .loader {
   background: linear-gradient(
-                rgba(255, 255, 255, 0.95),
-                rgba(255, 255, 255, 0.95)
+                rgba(255, 255, 255, 0.99),
+                rgba(255, 255, 255, 0.99)
             ),
             url('../images/backimage.png');
 }
