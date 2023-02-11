@@ -550,6 +550,66 @@ body {
             url('../images/backimage.png');
 }
 
+/************** FOR THE LOADER *********************/
+
+.loader {
+  background: linear-gradient(
+                rgba(255, 255, 255, 0.95),
+                rgba(255, 255, 255, 0.95)
+            ),
+            url('../images/backimage.png');
+}
+
+.loader.loaderfadeout {
+  opacity: 0 !important;
+  z-index: -1;
+  transition: opacity 0.4s ease-out;
+}
+
+.svgloader {
+  stroke: black;
+  stroke-width: 2;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  font-size: 3rem;
+  width: 100%;
+  height: 100%;
+  font-family: 'Stick', sans-serif;
+  animation: dash 2.5s linear forwards, filling 2s ease-in forwards,
+            shake 1s ease-in-out 2.8s infinite alternate;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filling {
+  0%,
+        90% {
+    fill: black;
+    fill-opacity: 0;
+  }
+
+  100% {
+    fill: black;
+    fill-opacity: 1;
+  }
+}
+
+@keyframes shake {
+  from {
+    transform: translateY(-1rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/************** FOR THE MENU *********************/
+
 .menu {
   display: block;
   box-sizing: border-box;
@@ -562,7 +622,7 @@ body {
   position: fixed;
   z-index: 100;
   left: 4%;
-  bottom: 0;
+  top: 2%;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
   transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
 }
@@ -683,15 +743,34 @@ body {
   top: 0;
 }
 
+.activelink {
+  color: rgb(57, 110, 180) !important;
+}
+
+/**************** FOR THE TRANSITION OF SECTIONS*********************/
+
+section {
+  animation: scaleAnim 1s ease-in-out;
+}
+
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-70%) scaleY(0);
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+/**************** FOR THE HERO SECTION*********************/
+
 .hero__text {
   text-align: center;
 }
 
 .hero__title {
   font-size: 3rem;
-  font-family: 'Caesar Dressing', cursive;
-  font-family: 'Hanalei', cursive;
-  font-family: 'Hanalei Fill', cursive;
   font-family: 'Stick', sans-serif;
 }
 
@@ -710,31 +789,22 @@ body {
   border-radius: 5%;
 }
 
-/* .hero {
-        background: linear-gradient(
-                rgba(255, 255, 255, 0.9),
-                rgba(255, 255, 255, 0.9)
-            ),
-            url('../images/back12.webp');
-    } */
-
 .hero__sociallink ion-icon {
   font-size: 1.5rem;
 }
 
-/* for the title */
+/*********** for the title ************************/
 
 .title {
   font-size: 3rem;
-  -webkit-background-clip: text;
   background-clip: text;
-  background-image: url('../images/afri4.webp');
+  -webkit-background-clip: text;
   color: transparent;
   text-align: center;
   text-transform: uppercase;
   position: relative;
   font-weight: 800;
-  -webkit-text-stroke: 0.1px #fff;
+  background-image: url('../images/afri4.webp');
 }
 
 .title::after {
@@ -749,7 +819,7 @@ body {
   position: absolute;
 }
 
-/* for the button */
+/***************** for the button *******************/
 
 .button {
   padding: 12px 18px;
@@ -782,12 +852,13 @@ body {
   background-color: rgba(57, 111, 180, 0.5);
 }
 
+/*******************fOR THE PROJECT SECTION*****************/
+
 .tab--active {
   border-bottom: 3px solid transparent;
   -o-border-image: url(../images/afri4.webp) 30 round;
      border-image: url(../images/afri4.webp) 30 round;
   padding: 0.1rem;
-  border-radius: 50%;
 }
 
 .project__content {
@@ -833,9 +904,16 @@ body {
   background-color: rgba(57, 111, 180, 0.5);
 }
 
+/**************MEDIA QUERIES*************/
+
 @media (max-width: 950px) {
   .container {
     padding: 0 50px;
+  }
+
+  .menu {
+    bottom: 0;
+    top: auto;
   }
 }
 
@@ -871,6 +949,10 @@ body {
     width: 100%;
     left: 0;
   }
+
+  .svgloader {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 300px) {
@@ -883,10 +965,10 @@ body {
     right: 0;
     top: 0;
   }
-}
 
-.fixed {
-  position: fixed;
+  .svgloader {
+    font-size: 1.7rem;
+  }
 }
 
 .absolute {
@@ -895,14 +977,6 @@ body {
 
 .relative {
   position: relative;
-}
-
-.top-\[5\%\] {
-  top: 5%;
-}
-
-.left-\[5\%\] {
-  left: 5%;
 }
 
 .top-0 {
@@ -925,8 +999,12 @@ body {
   left: -4%;
 }
 
-.z-\[100\] {
-  z-index: 100;
+.top-\[5\%\] {
+  top: 5%;
+}
+
+.z-\[500\] {
+  z-index: 500;
 }
 
 .z-10 {
@@ -945,6 +1023,10 @@ body {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mt-10 {
@@ -983,10 +1065,6 @@ body {
   display: none;
 }
 
-.h-\[10\%\] {
-  height: 10%;
-}
-
 .h-\[100vh\] {
   height: 100vh;
 }
@@ -999,8 +1077,8 @@ body {
   height: 0.2rem;
 }
 
-.w-\[20\%\] {
-  width: 20%;
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .w-\[3\%\] {
@@ -1009,10 +1087,6 @@ body {
 
 .w-\[6\%\] {
   width: 6%;
-}
-
-.w-\[100\%\] {
-  width: 100%;
 }
 
 .w-\[80\%\] {
@@ -1080,10 +1154,6 @@ body {
   align-self: center;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1125,11 +1195,6 @@ body {
 
 .p-\[0\.2rem\] {
   padding: 0.2rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .py-4 {
@@ -1177,6 +1242,10 @@ body {
 
 .pl-2 {
   padding-left: 0.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -1230,11 +1299,6 @@ body {
 .text-titlecolor {
   --tw-text-opacity: 1;
   color: hsl(230 8% 15% / var(--tw-text-opacity));
-}
-
-.shadow-black {
-  --tw-shadow-color: #000;
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .brightness-50 {

@@ -14,47 +14,36 @@
         <title>Portfolio</title>
     </head>
     <body>
-        <!-- MENU NAVIGATION -->
-        <!-- <nav
-            class="hidden menu mx-auto px-8 py-4 fixed top-[5%] left-[5%] w-[20%] h-[10%] z-[100] shadow-black rounded overflow-hidden"
+        <!-- LOADER ANIMATION -->
+        <div
+            class="loader w-[100%] h-[100vh] flex justify-center items-center absolute z-[500]"
         >
-            <div class="menu__container flex gap-2">
-                <span class="link-hide">
-                    <a href="#" class="hover:text-firstcolor font-semibold"
-                        >Accueil</a
-                    >
-                </span>
-                <span class="link-hide">
-                    <a href="#" class="hover:text-firstcolor font-semibold"
-                        >A propos</a
-                    >
-                </span>
-                <span class="link-hide">
-                    <a href="#" class="hover:text-firstcolor font-semibold"
-                        >Projets</a
-                    >
-                </span>
-                <span class="link-hide">
-                    <a href="#" class="hover:text-firstcolor font-semibold"
-                        >Contact</a
-                    >
-                </span>
-                <div class="toggle"></div>
-            </div>
-        </nav> -->
+            <svg class="svgloader">
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" >GERALDINE ELONO</text>
+                    
+            </svg>
+        </div>
+        <!-- MENU NAVIGATION -->
+
         <nav class="menu">
             <div class="container__menu">
                 <div class="toggle"></div>
             </div>
-            <span class="link--hide"><a href="#">Home </a></span
-            ><span class="link--hide"><a href="#">About </a></span
-            ><span class="link--hide"><a href="#">Info</a></span
-            ><span class="link--hide"><a href="#">Contact</a></span>
+            <span class="link--hide menu__link"
+                ><a href="#home" class="activelink">Home </a></span
+            ><span class="link--hide menu__link"
+                ><a href="#apropos">A propos </a></span
+            ><span class="link--hide menu__link"
+                ><a href="#projets">Projets</a></span
+            ><span class="link--hide menu__link"
+                ><a href="#contact">Contact</a></span
+            >
         </nav>
         <main>
             <!-- HERO SECTION -->
             <section
                 class="hero flex flex-col items-center justify-center h-[100vh] bg-cover bg-no-repeat relative pt-2 sm:pt-0"
+                id="home"
             >
                 <img
                     src="images/afri10.jpg"
@@ -154,7 +143,7 @@
             </section>
 
             <!-- ABOUT SECTION -->
-            <section class="about container">
+            <section class="about container mb-6 hidden" id="apropos">
                 <h2 class="title">A propos de moi</h2>
                 <div class="about__presentation flex flex-col">
                     <div class="about__firstpart mt-10">
@@ -506,7 +495,10 @@
             </section>
 
             <!-- PROJECT SECTION-->
-            <section class="project container mt-10 text-center">
+            <section
+                class="project container mt-10 text-center hidden"
+                id="projets"
+            >
                 <h2 class="title">Projets</h2>
                 <div class="project__container mt-5 grid">
                     <div
@@ -586,7 +578,15 @@
             </section>
 
             <!-- CONTACT SECTION-->
-            <section class="contact container mt-10 mb-4">
+            <section
+                class="contact container pb-4 h-[100vh] flex flex-col justify-center relative hidden"
+                id="contact"
+            >
+                <img
+                    src="images/afri10.jpg"
+                    class="absolute w-[3%] h-[100%] top-0 left-0 object-cover"
+                    alt=""
+                />
                 <h2 class="title">Me Contacter</h2>
                 <div
                     class="contact__container flex flex-col items-start gap-5 mt-6 md:gap-0 md:flex-row md:justify-around md:items-center"
@@ -628,6 +628,12 @@
                         >
                     </div>
                 </div>
+
+                <img
+                    src="images/afri10.jpg"
+                    class="absolute w-[3%] h-[100%] top-0 right-0 object-cover"
+                    alt=""
+                />
             </section>
         </main>
 

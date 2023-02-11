@@ -10,6 +10,58 @@
             ),
             url('../images/backimage.png');
     }
+
+    /************** FOR THE LOADER *********************/
+    .loader {
+        background: linear-gradient(
+                rgba(255, 255, 255, 0.95),
+                rgba(255, 255, 255, 0.95)
+            ),
+            url('../images/backimage.png');
+    }
+    .loader.loaderfadeout {
+        opacity: 0 !important;
+        z-index: -1;
+        transition: opacity 0.4s ease-out;
+    }
+    .svgloader {
+        stroke: black;
+        stroke-width: 2;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        font-size: 3rem;
+        width: 100%;
+        height: 100%;
+        font-family: 'Stick', sans-serif;
+        animation: dash 2.5s linear forwards, filling 2s ease-in forwards,
+            shake 1s ease-in-out 2.8s infinite alternate;
+    }
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes filling {
+        0%,
+        90% {
+            fill: black;
+            fill-opacity: 0;
+        }
+        100% {
+            fill: black;
+            fill-opacity: 1;
+        }
+    }
+    @keyframes shake {
+        from {
+            transform: translateY(-1rem);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    /************** FOR THE MENU *********************/
     .menu {
         display: block;
         box-sizing: border-box;
@@ -22,7 +74,7 @@
         position: fixed;
         z-index: 100;
         left: 4%;
-        bottom: 0;
+        top: 2%;
         box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
         transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
     }
@@ -125,16 +177,31 @@
         transform: rotate(225deg);
         top: 0;
     }
+    .activelink {
+        color: rgb(57, 110, 180) !important;
+    }
+
+    /**************** FOR THE TRANSITION OF SECTIONS*********************/
+    section {
+        animation: scaleAnim 1s ease-in-out;
+    }
+
+    @keyframes scaleAnim {
+        0% {
+            transform: translateY(-70%) scaleY(0);
+        }
+        100% {
+            transform: translateY(0) scaleY(1);
+        }
+    }
+
+    /**************** FOR THE HERO SECTION*********************/
 
     .hero__text {
         text-align: center;
     }
     .hero__title {
         font-size: 3rem;
-        font-family: 'Caesar Dressing', cursive;
-
-        font-family: 'Hanalei', cursive;
-        font-family: 'Hanalei Fill', cursive;
         font-family: 'Stick', sans-serif;
     }
     .hero__paragraph {
@@ -151,28 +218,22 @@
         box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.4);
         border-radius: 5%;
     }
-    /* .hero {
-        background: linear-gradient(
-                rgba(255, 255, 255, 0.9),
-                rgba(255, 255, 255, 0.9)
-            ),
-            url('../images/back12.webp');
-    } */
+
     .hero__sociallink ion-icon {
         font-size: 1.5rem;
     }
-    /* for the title */
+
+    /*********** for the title ************************/
     .title {
         font-size: 3rem;
-        -webkit-background-clip: text;
         background-clip: text;
-        background-image: url('../images/afri4.webp');
+        -webkit-background-clip: text;
         color: transparent;
         text-align: center;
         text-transform: uppercase;
         position: relative;
         font-weight: 800;
-        -webkit-text-stroke: 0.1px #fff;
+        background-image: url('../images/afri4.webp');
     }
     .title::after {
         content: '';
@@ -185,7 +246,8 @@
         height: 0.5rem;
         position: absolute;
     }
-    /* for the button */
+
+    /***************** for the button *******************/
 
     .button {
         padding: 12px 18px;
@@ -215,11 +277,12 @@
         background-color: rgba(57, 111, 180, 0.5);
     }
 
+    /*******************fOR THE PROJECT SECTION*****************/
+
     .tab--active {
         border-bottom: 3px solid transparent;
         border-image: url(../images/afri4.webp) 30 round;
         padding: 0.1rem;
-        border-radius: 50%;
     }
     .project__content {
         grid-column: 1/2;
@@ -255,9 +318,15 @@
     .experience__item::after {
         background-color: rgba(57, 111, 180, 0.5);
     }
+
+    /**************MEDIA QUERIES*************/
     @media (max-width: 950px) {
         .container {
             padding: 0 50px;
+        }
+        .menu {
+            bottom: 0;
+            top: auto;
         }
     }
     @media (min-width: 768px) {
@@ -286,6 +355,9 @@
             width: 100%;
             left: 0;
         }
+        .svgloader {
+            font-size: 2rem;
+        }
     }
     @media (max-width: 300px) {
         .menu.open {
@@ -295,6 +367,9 @@
         .container__menu.close {
             right: 0;
             top: 0;
+        }
+        .svgloader {
+            font-size: 1.7rem;
         }
     }
 }
