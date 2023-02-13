@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/favicon.jpg" />
+        <link rel="apple-touch-icon" href="images/favicon (1).jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Concert+One&family=Hanalei&family=Hanalei+Fill&family=Lato:wght@300;400;700&family=Stick&family=Ubuntu+Condensed&family=Ubuntu:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Stick&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="dist/main.css" />
@@ -19,8 +21,14 @@
             class="loader w-[100%] h-[100vh] flex justify-center items-center absolute z-[500]"
         >
             <svg class="svgloader">
-                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" >GERALDINE ELONO</text>
-                    
+                <text
+                    x="50%"
+                    y="50%"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                >
+                    GERALDINE ELONO
+                </text>
             </svg>
         </div>
         <!-- MENU NAVIGATION -->
@@ -68,83 +76,36 @@
                     alt=""
                 />
                 <div class="hero__sociallink mt-5 flex gap-2">
-                    <ion-icon
-                        name="logo-behance"
-                        class="hover:text-firstcolor"
-                    ></ion-icon>
-                    <ion-icon
-                        name="logo-linkedin"
-                        class="hover:text-firstcolor"
-                    ></ion-icon>
-                    <ion-icon
-                        name="logo-facebook"
-                        class="hover:text-firstcolor"
-                    ></ion-icon>
-                    <ion-icon
-                        name="logo-twitter"
-                        class="hover:text-firstcolor"
-                    ></ion-icon>
-                </div>
-                <!-- <svg
-                    width="300"
-                    height="300"
-                    viewBox="0 0 1000 1000"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <defs>
-                        <clipPath id="shape">
-                            <path
-                                fill="currentColor"
-                                d="M744.5,707.5Q635,915,373,849Q111,783,113.5,502Q116,221,364,188.5Q612,156,733,328Q854,500,744.5,707.5Z"
-                            ></path>
-                        </clipPath>
-                    </defs>
-
-                    <g clip-path="url(#shape)">
-                        <path
-                            fill="#444cf7"
-                            d="M744.5,707.5Q635,915,373,849Q111,783,113.5,502Q116,221,364,188.5Q612,156,733,328Q854,500,744.5,707.5Z"
-                        />
-                        <image
-                            class="home__blobimg"
-                            href="images/img21.jpg"
-                            y="110"
-                            x="115"
-                        />
-                    </g>
-                </svg> -->
-
-                <div
-                    class="hidden social__icon absolute flex flex-col sm:top-[50%] translate-y-[-50%] right-0 pr-8 pb-5 text-2xl text-textcolor gap-2 top-[28%]"
-                >
-                    <span
-                        class="sm:w-0.5 sm:h-20 sm:bg-textcolor sm:self-center sm:block hidden"
-                    ></span>
-                    <ion-icon
-                        name="logo-behance"
-                        class="hover:text-firstcolor"
-                    ></ion-icon>
-                    <ion-icon
-                        name="logo-linkedin"
-                        class="hover:text-firstcolor"
-                    ></ion-icon>
-                    <ion-icon
-                        name="logo-facebook"
-                        class="hover:text-firstcolor"
-                    ></ion-icon>
-                    <ion-icon
-                        name="logo-twitter"
-                        class="hover:text-firstcolor"
-                    ></ion-icon>
-                    <span
-                        class="sm:w-0.5 sm:h-20 sm:bg-textcolor sm:self-center sm:block hidden"
-                    ></span>
+                    <a href="#">
+                        <ion-icon
+                            name="logo-behance"
+                            class="hover:text-firstcolor"
+                        ></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon
+                            name="logo-linkedin"
+                            class="hover:text-firstcolor"
+                        ></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon
+                            name="logo-facebook"
+                            class="hover:text-firstcolor"
+                        ></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon
+                            name="logo-twitter"
+                            class="hover:text-firstcolor"
+                        ></ion-icon
+                    ></a>
                 </div>
             </section>
 
             <!-- ABOUT SECTION -->
             <section class="about container mb-6 hidden" id="apropos">
-                <h2 class="title">A propos de moi</h2>
+                <h1 class="title">A propos de moi</h1>
                 <div class="about__presentation flex flex-col">
                     <div class="about__firstpart mt-10">
                         <img
