@@ -1,9 +1,8 @@
 //for the loader
 const loader = document.querySelector('.loader');
 window.addEventListener('load', () => {
-    setTimeout(() => {
-        loader.classList.add('loaderfadeout');
-    }, 5000);
+    loader.classList.add('loaderfadeout');
+ 
 });
 
 //POUR LE MENU

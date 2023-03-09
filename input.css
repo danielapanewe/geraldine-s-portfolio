@@ -291,12 +291,16 @@
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.4s ease-out;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-bottom: 3rem;
+        gap: 0.8rem;
     }
     .project__content img {
         width: 0;
-        height: 300px;
+        height: 100%;
         object-fit: cover;
-        border-radius: 2rem;
+        /* border-radius: 2rem; */
         transition: all 0.4s ease-out;
     }
     .project__content--active {
@@ -306,6 +310,7 @@
     .project__content--active img {
         width: 100%;
     }
+    .project__content--photographie{}
     .contact__item ion-icon {
         font-size: 1.5rem;
         color: rgba(57, 111, 180, 0.5);
